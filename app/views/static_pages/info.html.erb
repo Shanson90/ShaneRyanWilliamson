@@ -1,0 +1,54 @@
+<div id='intro'>
+  <p>
+    Let's chat.
+  </p>
+</div>
+<table id="tableoftext">
+  <tbody>
+  <tr>
+    <td>
+      <!--Actual Contact Info-->
+      <h4>
+        <strong>Here's my basic contact info:</strong>
+      </h4>
+      <p>
+        Shane Ryan Williamson
+      </p>
+      <p>
+        shane.ryan.williamson@gmail.com
+      </p>
+      <p>
+        (720) 431 - 8530
+      </p>
+      </p>
+      <p>
+        You can also follow me on
+        <%= link_to 'twitter', 'https://twitter.com/mrwilliamson1', target: '_blank' %>
+        or
+        <%= link_to 'GitHub', 'https://github.com/Shanson90', target: '_blank' %>,
+        check out my
+        <%= link_to 'LinkedIn', 'https://www.linkedin.com/in/shaneryanwilliamson', target: '_blank' %>,
+        or even
+        <%= link_to 'download my resume as a pdf', static_pages_download_resume_path %>,
+        if you're in to that kind of thing.
+      </p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<!--Site Navigation-->
+<p>
+<div id='footer'>
+  <%= link_to 'thoughts', root_path %>
+  |
+  <%= link_to 'interests', static_pages_interests_path %>
+  |
+  <%= link_to 'photos', static_pages_photos_path %>
+  |
+  <%= link_to 'code', static_pages_code_path %>
+  |
+  <%= link_to 'info', static_pages_info_path %>
+</div>
+</p>

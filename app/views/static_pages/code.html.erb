@@ -1,0 +1,137 @@
+<div id='intro'>
+  <p>
+    This is my code.
+  </p>
+</div>
+
+<table id="tableoftext">
+  <tbody>
+  <tr>
+    <td>
+      <p>
+        I started coding in high school when I learned how to write progams in BASIC that would run on my TI-84 calculator. After that, I played around with a few languages in college, before realizing my love for code was was something I wanted to spend my life pursuing. I'm now working on becoming a full stack web developer. This site, along with all of the projects below, are all 100% my work, 100% written from scratch and, let's face it, 100% crap. Over time, I hope to turn the crap into some decent work, and hope this page will show that progression. It's also worth mentioning that I wrote this site from scratch. The work is in decending order, by the date I finished it, so my newest work is at the top. Each title is a link to download the code file.  Feel free to check out my work and let me know what you think. My email is on my info page.
+      </p>
+      <p>
+        <ul>
+          <li>
+      <p>
+        <a href="./code/RemoveCXL.bas">
+          ChathamXL Formula Remover,
+        </a>
+        <em>March 2016, VBA</em>
+      </p>
+      <p>
+        A coworker at <a href="http://www.chathamfinancial.com">Chatham</a> asked if I could develop a way to remove all the formulas in a given file that used our custom Excel add-on, ChathamXL and replace the formulas with the values they produced. While fairly easy, it presented an interesting problem. The code ran so fast that in between finding each cell that needed to be changed, Excel would attempt to recalculate all the formulas in the file, and the ChathamXL formulas lag a few seconds, so my code was finding #loading... as the value for the next cell it found, and saving that rather than the numerical value the formula would have returned. The fix was pretty easy - just tell Excel not to recalculate anything before getting started, but not something I anticipated.
+      </p>
+      </li>
+      <li>
+        <p>
+          <a href="/chipSplit/chipSplit.html">
+            ChipSplit,
+          </a>
+          <em>December 2015, HTML/CSS/JS</em>
+        </p>
+        <p>
+          This doesn't work yet, but the idea is to develop a website that tells you how to properly divide chips for a home poker game, which is harder than you may think.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="./code/JEReportsAutomation.bas">
+            Journal Entry Report Formatter,
+          </a>
+          <em>August 2015, VBA</em>
+        </p>
+        <p>
+          This is a macro that I wrote to automate formatting of journal entry reports while working at
+          <a href="http://www.chathamfinancial.com">Chatham</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="http://www.eatdrinkandbewilliamson.com">
+            Eat Drink and be Williamson,
+          </a>
+          <em>June 2015, HTML/CSS</em>
+        </p>
+        <p>
+          Very much a work in progress, but I'll be putting together the website from which we'll run our wedding, if I can swing it.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="./code/DragonMaster.rb">
+            Dragon Master,
+          </a>
+          <em>May 2015, Ruby</em>
+        </p>
+        <p>
+          First real attempt at object oriented programming.  This little game allows you to take care of a pet dragon.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="./code/99 Bottles of Beer Lyrics.rb">
+            99 Bottles of Beer Lyrics,
+          </a>
+          <em>April 2015, Ruby</em>
+        </p>
+        <p>
+          This program prompts the user for a number of beers, then prints out the full lyrics to the '99 Bottles of Beer' song.  Pretty simple, but I threw in a twist. I stole some code from my English Numbers program so that the lyrics use written out numbers rather than simply the numerical form.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="./code/English Nums.rb">
+            English Numbers,
+          </a>
+          <em>April 2015, Ruby</em>
+        </p>
+        <p>
+          This program takes any number from 0 to 1,000,000 and outputs the number in English form. For example, one could enter 976,453 and the program would return nine hundred seventy-six thousand four hundred fifty-three.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="./code/Billion Seconds Bday.rb">
+            Billion Seconds Birthday,
+          </a>
+          <em>April 2015, Ruby</em>
+        </p>
+        <p>
+          This program takes your birthday and tells you when you will (or did) turn one billion seconds old.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="http://www.tulsaturfpro.com">
+            Tulsa Turf Pro,
+          </a>
+          <em>June 2012, Wix</em>
+        </p>
+        <p>
+          I started and ran a small lawn service company during my junior and senior year of college.  In the process I developed this site, using the website creation software, Wix, in conjunction with Google Maps and Forms. I ultimately sold the company, but last I checked the new owners had not made any significant changes to the site.
+        </p>
+      </li>
+      </ul>
+      </p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<p>&nbsp</p>
+<p>&nbsp</p>
+
+
+<!--Page Navigation-->
+<div id='footer'>
+  <%= link_to 'thoughts', root_path %>
+  |
+  <%= link_to 'interests', static_pages_interests_path %>
+  |
+  <%= link_to 'photos', static_pages_photos_path %>
+  |
+  <%= link_to 'code', static_pages_code_path %>
+  |
+  <%= link_to 'info', static_pages_info_path %>
+</div>
