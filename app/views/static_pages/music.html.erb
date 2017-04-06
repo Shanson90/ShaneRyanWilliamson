@@ -1,4 +1,3 @@
-<body>
 <div id='intro'>
   <p>
     Music is like music to my ears.
@@ -10,7 +9,7 @@
     <td>
       <p>
         Someday there will be some content here. For now, follow me on
-        <%= link_to 'Spotify', 'https://spotify.com' %>,
+        <%= link_to 'Spotify', 'https://spotify.com', target: '_blank' %>,
         <%= link_to 'SoundCloud', 'https://soundcloud.com/shane-williamson-19', target: '_blank' %>,
         or
         <%= link_to 'HypeMachine', 'http://www.hypem.com/SRWilliamson', target: '_blank' %>.
@@ -19,18 +18,3 @@
   </tr>
   </tbody>
 </table>
-
-<!-- Site Navigation -->
-<p>
-<div id='footer'>
-  <%= link_to 'thoughts', root_path %>
-  |
-  <%= link_to 'interests', static_pages_interests_path %>
-  |
-  <%= link_to 'photos', static_pages_photos_path %>
-  |
-  <%= link_to 'code', static_pages_code_path %>
-  |
-  <%= link_to 'info', static_pages_info_path %>
-</div>
-</body>

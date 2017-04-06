@@ -23,13 +23,29 @@
       </div>
       <ul>
         <li>
-          <p><a href="http://www.righteousmind.com">The Righteous Mind</a>, Jonathan Haidt</p>
+          <p>
+            <%= link_to 'The Nature of Software Development', 'https://pragprog.com/book/rjnsd/the-nature-of-software-development', target: '_blank'%>, Ron Jeffries
+          </p>
+          <p>Finished March 2015</p>
+          <p>A short, simple, thought-provoking book.</p>
+        </li>
+        <li>
+          <p>
+            <%= link_to 'Clean Code', 'http://www.goodreads.com/book/show/3735293-clean-code', target: '_blank' %>, Robert C. Martin
+          </p>
+          <p>Finished November 2015</p>
+          <p>This book has become the foundation of my thought on defining good code. A must for any programmer.</p>
+        </li>
+        <li>
+          <p>
+            <%= link_to 'The Righteous Mind', 'http://www.righteousmind.com', target: '_blank'%>, Jonathan Haidt
+          </p>
           <p>Finished April 2016</p>
           <p>A fantastic explanation of moral psychology and how it affects us all.</p>
         </li>
         <li>
           <p>
-            <a href="http://www.goodreads.com/book/show/4191136-business-adventures">Business Adventures</a>, John Brooks
+            <%= link_to 'Business Adventures', 'http://www.goodreads.com/book/show/4191136-business-adventures', target: '_blank' %>, John Brooks
           </p>
           <p>
             Finished March 2016
@@ -40,12 +56,20 @@
           </p>
         </li>
         <li>
-          <p><a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow">Thinking Fast and Slow</a>, Daniel Kahneman</p>
-          <p>Still reading...</p>
+          <p>
+            <%= link_to 'Thinking Fast and Slow', 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow', target: '_blank'%>, Daniel Kahneman
+          </p>
+          <p>
+            Still reading...
+          </p>
         </li>
         <li>
-          <p><a href="http://www.nytimes.com/2015/05/17/books/review/elon-musk-by-ashlee-vance.html">Elon Musk</a>, Ashlee Vance</p>
-          <p>Finished December 2015</p>
+          <p>
+            <%= link_to 'Elon Musk', 'http://www.nytimes.com/2015/05/17/books/review/elon-musk-by-ashlee-vance.html' %>, Ashlee Vance
+          </p>
+          <p>
+            Finished December 2015
+          </p>
           <p>
             In a word, unfinished.  While this was a great biography of Musk's early success, almost anyone can see the
             story of Musk is not yet ended. This book was of particular interest to me as I found so many parallels
@@ -55,7 +79,7 @@
         </li>
         <li>
           <p>
-            <a href="http://austinkleon.com/show-your-work/">Show Your Work!</a>, Austin Kleon
+            <%= link_to 'Show Your Work!', 'http://austinkleon.com/show-your-work/', target: '_blank' %>, Austin Kleon
           </p>
           <p>
             Finished February 2016
@@ -65,12 +89,16 @@
           </p>
         </li>
         <li>
-          <p><a href="https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)">The Martian</a>, Andy Weir</p>
-          <p>Finished June 2015</p>
+          <p>
+            <%= link_to 'The Martian', 'https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)', target: '_blank' %>, Andy Weir
+          </p>
+          <p>
+            Finished June 2015
+          </p>
         </li>
         <li>
           <p>
-            <a href="https://en.wikipedia.org/wiki/How_to_Create_a_Mind">How to Create a Mind</a>, Ray Kurzweil
+            <%= link_to 'How to Create a Mind', 'https://en.wikipedia.org/wiki/How_to_Create_a_Mind', target: '_blank' %>, Ray Kurzweil
           </p>
           <p>
             Finished May 2015
@@ -80,7 +108,9 @@
           </p>
         </li>
         <li>
-          <p><a href="https://en.wikipedia.org/wiki/Atlas_Shrugged">Atlas Shrugged</a>, Ayn Rand</p>
+          <p>
+            <%= link_to 'Atlas Shrugged', 'https://en.wikipedia.org/wiki/Atlas_Shrugged', target: '_blank' %>, Ayn Rand
+          </p>
           <p>
             Finished August 2009
           </p>
@@ -96,20 +126,4 @@
   </tr>
   </tbody>
 </table>
-<p>&nbsp</p>
-<p>&nbsp</p>
-<!-- Site Navigation -->
-<p>
-<div id='footer'>
-  <%= link_to 'thoughts', root_path %>
-  |
-  <%= link_to 'interests', static_pages_interests_path %>
-  |
-  <%= link_to 'photos', static_pages_photos_path %>
-  |
-  <%= link_to 'code', static_pages_code_path %>
-  |
-  <%= link_to 'info', static_pages_info_path %>
-</div>
-</p>
 </body>
